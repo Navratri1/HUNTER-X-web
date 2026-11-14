@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#eee6ff">
+<title>HUNTER X — Download Now</title>
+<meta name="description" content="Discover HUNTER X. Download the app now.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#25143f;--muted:#76668d;--purple:#8748d8;--deep:#57239d;
+  --glass:rgba(255,255,255,.62);--line:rgba(255,255,255,.82);
+  --shadow:0 24px 70px rgba(83,43,133,.14)
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  min-height:100vh;overflow-x:hidden;color:var(--ink);
+  font-family:"DM Sans",sans-serif;
+  background:
+    radial-gradient(ellipse at 12% 8%,rgba(190,153,255,.58),transparent 32%),
+    radial-gradient(ellipse at 90% 25%,rgba(220,199,255,.75),transparent 34%),
+    radial-gradient(ellipse at 48% 82%,rgba(193,165,242,.48),transparent 40%),
+    linear-gradient(135deg,#fbf8ff,#eee5ff 52%,#f8f2ff)
+}
+a{color:inherit}
+.smoke{position:fixed;inset:-25%;z-index:-1;pointer-events:none;filter:blur(55px);opacity:.62}
+.smoke:before,.smoke:after{content:"";position:absolute;width:65vw;height:52vw;min-width:420px;min-height:350px;border-radius:50%;
+ background:radial-gradient(ellipse at 35% 50%,rgba(157,103,226,.48),transparent 60%),radial-gradient(ellipse at 65% 45%,rgba(230,215,255,.85),transparent 62%);
+ animation:smokeDrift 22s ease-in-out infinite alternate}
+.smoke:before{left:-5%;top:8%}.smoke:after{right:-8%;bottom:0;animation-duration:29s;animation-direction:alternate-reverse}
+@keyframes smokeDrift{from{transform:translate(-3%,2%) rotate(-8deg) scale(.94)}to{transform:translate(9%,-6%) rotate(13deg) scale(1.13)}}
+.wrap{width:min(1080px,91%);margin:auto}
+header{padding:34px 0 8px;display:flex;justify-content:center}
+.logo-frame{
+ width:clamp(138px,20vw,184px);aspect-ratio:1;display:grid;place-items:center;
+ border-radius:38px;border:1px solid rgba(255,255,255,.95);
+ background:linear-gradient(145deg,rgba(255,255,255,.8),rgba(255,255,255,.36));
+ box-shadow:0 18px 48px rgba(91,49,145,.17),inset 0 1px 0 #fff;
+ color:#7440b7;font:800 18px "Outfit",sans-serif;letter-spacing:.8px;text-align:center
+}
+.hero{text-align:center;padding:27px 0 44px}
+.pill{display:inline-flex;align-items:center;gap:9px;padding:9px 15px;border-radius:99px;
+ border:1px solid rgba(130,78,190,.18);background:rgba(255,255,255,.55);
+ color:#713ab7;font-size:10px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
+.pill:before{content:"";width:7px;height:7px;border-radius:50%;background:#9a63e5;box-shadow:0 0 13px #a879eb}
+h1,h2,h3{font-family:"Outfit",sans-serif}
+.hero h1{margin:18px 0 13px;font-size:clamp(46px,8vw,82px);line-height:.96;letter-spacing:-3px;font-weight:800}
+.gradient{color:transparent;background:linear-gradient(100deg,#a16be9,#6429b4 62%,#ad7ce9);-webkit-background-clip:text;background-clip:text}
+.hero p{max-width:580px;margin:0 auto 26px;color:var(--muted);font-size:15px;line-height:1.8}
+.download{
+ display:inline-flex;align-items:center;justify-content:center;gap:11px;min-height:60px;padding:0 38px;
+ border-radius:18px;text-decoration:none;color:white;font-size:15px;font-weight:800;letter-spacing:1px;
+ background:linear-gradient(115deg,#a875ee,#783bc7 65%,#5b279e);
+ box-shadow:0 14px 32px rgba(112,56,194,.3),inset 0 1px 0 rgba(255,255,255,.35);
+ transition:transform .2s,box-shadow .2s
+}
+.download:hover{transform:translateY(-3px);box-shadow:0 19px 38px rgba(112,56,194,.38)}
+.download svg{width:19px;height:19px}
+.micro{display:block;margin-top:12px;color:#8e7ca2;font-size:11px}
+.section{padding:27px 0 38px}
+.heading{text-align:center;margin-bottom:24px}
+.kicker{color:#8750ca;font-size:10px;font-weight:800;letter-spacing:2.3px;text-transform:uppercase}
+.heading h2{margin-top:7px;font-size:clamp(27px,4vw,39px);letter-spacing:-.7px}
+.heading p{margin-top:7px;color:var(--muted);font-size:13px}
+.slider-wrap{width:min(100%,470px);margin:auto;padding:11px;border-radius:29px;
+ border:1px solid rgba(255,255,255,.95);background:rgba(255,255,255,.48);
+ box-shadow:var(--shadow);backdrop-filter:blur(18px)}
+.slider{position:relative;overflow:hidden;border-radius:20px}
+.track{display:flex;transition:transform .65s cubic-bezier(.22,.75,.25,1)}
+.slide{min-width:100%;aspect-ratio:9/16;display:block;overflow:hidden;
+ border-radius:20px;background:linear-gradient(145deg,#e5d4ff,#f8f3ff 55%,#d9c2fb);
+ border:1px solid rgba(126,77,184,.12)}
+.slide img{display:block;width:100%;height:100%;object-fit:contain}
+.placeholder{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+ gap:13px;padding:20px;text-align:center;color:#7544b2;
+ background:radial-gradient(circle at 50% 42%,rgba(255,255,255,.75),transparent 54%)}
+.placeholder .frame-icon{width:66px;height:66px;border-radius:22px;display:grid;place-items:center;
+ background:rgba(255,255,255,.72);box-shadow:0 10px 28px rgba(99,55,151,.12);font-size:28px}
+.placeholder strong{font:800 17px "Outfit",sans-serif;letter-spacing:.3px}
+.placeholder small{font-size:10px;color:#927eaa}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:2;width:43px;height:43px;
+ border:1px solid rgba(255,255,255,.9);border-radius:50%;background:rgba(255,255,255,.84);
+ color:#63339e;font-size:24px;cursor:pointer;box-shadow:0 6px 20px rgba(63,35,99,.13)}
+.arrow.prev{left:14px}.arrow.next{right:14px}
+.dots{display:flex;justify-content:center;gap:8px;padding:16px 0 3px}
+.dot{width:8px;height:8px;border:0;border-radius:20px;background:#cbb8e7;cursor:pointer;transition:.25s}
+.dot.active{width:25px;background:#8144d6}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.stat{padding:25px 15px;border-radius:22px;text-align:center;border:1px solid var(--line);
+ background:var(--glass);box-shadow:0 14px 40px rgba(83,42,137,.09);backdrop-filter:blur(16px)}
+.stat-icon{width:42px;height:42px;margin:auto;display:grid;place-items:center;border-radius:15px;
+ background:#eddefe;color:#793dbd;font-size:20px}
+.stat-number{margin-top:10px;color:#5f2b9f;font:800 clamp(27px,5vw,38px) "Outfit",sans-serif}
+.stat-label{margin-top:3px;color:var(--muted);font-size:12px;font-weight:700}
+.demo{margin:13px auto 0;max-width:650px;text-align:center;color:#907fa2;font-size:10px;line-height:1.6}
+.rating{display:flex;align-items:center;justify-content:center;gap:17px;padding:22px;margin-bottom:16px;
+ border:1px solid var(--line);border-radius:21px;background:rgba(255,255,255,.57);box-shadow:0 12px 34px rgba(83,42,137,.08)}
+.score{font:800 43px "Outfit",sans-serif;color:#582590}
+.stars{color:#efa72e;letter-spacing:3px;font-size:19px}
+.rating-note{margin-top:3px;color:var(--muted);font-size:11px}
+.reviews{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.review{padding:21px;border-radius:20px;border:1px solid var(--line);background:var(--glass);
+ box-shadow:0 13px 38px rgba(83,42,137,.08);backdrop-filter:blur(15px)}
+.person{display:flex;align-items:center;gap:10px}
+.avatar{width:39px;height:39px;display:grid;place-items:center;border-radius:50%;color:#fff;
+ background:linear-gradient(135deg,#b58aef,#7138bd);font-weight:800}
+.person b{display:block;font-size:12px}.person small{color:#9987ad;font-size:10px}
+.review .stars{margin:14px 0 8px;font-size:13px}
+.review h3{font-size:16px}.review p{margin-top:7px;color:var(--muted);font-size:12px;line-height:1.7}
+.review .sample{display:inline-block;margin-top:12px;color:#8b5abc;font-size:9px;font-weight:800;letter-spacing:.7px;text-transform:uppercase}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feature{padding:23px 17px;border-radius:20px;border:1px solid var(--line);background:var(--glass);
+ box-shadow:0 12px 35px rgba(83,42,137,.08);text-align:center}
+.feature .ico{font-size:25px}.feature h3{margin-top:10px;font-size:15px}.feature p{margin-top:6px;color:var(--muted);font-size:11px;line-height:1.65}
+.cta{margin:24px auto 54px;padding:38px 20px;border-radius:28px;text-align:center;color:white;
+ background:radial-gradient(circle at 12% 10%,rgba(255,255,255,.22),transparent 35%),linear-gradient(120deg,#a77aeb,#743bc0 65%,#59299b);
+ box-shadow:0 22px 55px rgba(102,53,170,.24)}
+.cta h2{font-size:clamp(27px,4vw,38px)}.cta p{margin:9px 0 21px;color:rgba(255,255,255,.82);font-size:13px}
+.cta .download{background:#fff;color:#612d9e;box-shadow:0 8px 25px rgba(42,15,77,.16)}
+footer{padding:0 0 28px;text-align:center;color:#927fa7;font-size:11px;line-height:1.8}
+footer b{color:#7138b6}
+@media(max-width:650px){
+ header{padding-top:25px}.logo-frame{width:150px;border-radius:32px}
+ .hero{padding-top:22px}.hero p{font-size:13px}
+ .slider-wrap{width:min(100%,400px);padding:8px;border-radius:24px}
+ .slide,.slider{border-radius:17px}.reviews{grid-template-columns:1fr}
+ .features{grid-template-columns:1fr}.feature{display:flex;align-items:center;gap:14px;text-align:left}
+ .feature h3{margin-top:0}.feature .ico{min-width:34px}
+ .arrow{width:38px;height:38px}
+}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="smoke" aria-hidden="true"></div>
+<header class="wrap">
+  <!-- HUNTER X LOGO -->
+  <div class="logo-frame">
+    <img src="https://i.ibb.co/8LD8BZYs/file-00000000d7f082119cb90ea3e66ed90f.png"
+         alt="HUNTER X Logo" style="width:100%;height:100%;padding:10px;object-fit:contain;border-radius:inherit;">
+  </div>
+</header>
+
+<main>
+<section class="hero wrap">
+  <div class="pill">🇮🇳 INDIA's no. 1 e-sport app</div>
+  <h1>WELCOME TO<br><span class="gradient">HUNTER X</span></h1>
+  <p>Enter the HUNTER X experience. Explore the app, discover its features and get started today.</p>
+
+   <main>
+<section class="hero wrap">
+  <div class="pill"> official</div>
+
+  <a class="download" href="https://oqimtgbkifzbiqcwckki.supabase.co/storage/v1/object/public/apks/1794589224834-HUNTER.X.apk">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5M12 15V3"/></svg>
+    DOWNLOAD NOW
+  </a>
+  <span class="micro">Android APK • Direct download</span>
+</section>
+
+<section class="section wrap" id="screenshots">
+  <div class="heading"><div class="kicker">Inside the app</div><h2>Explore <span class="gradient">HUNTER X</span></h2><p>Swipe to preview the app screens.</p></div>
+  <div class="slider-wrap">
+    <div class="slider">
+      <div class="track" id="track">
+        <!-- HUNTER X APP SCREENSHOTS: 4 images -->
+        <a class="slide" href="https://oqimtgbkifzbiqcwckki.supabase.co/storage/v1/object/public/apks/1794589224834-HUNTER.X.apk"><img src="https://i.ibb.co/fV5FT2CL/Screenshot-2026-11-14-09-52-15-494-hunter-x3.jpg" alt="HUNTER X Screenshot 1"></a>
+        <a class="slide" href="https://oqimtgbkifzbiqcwckki.supabase.co/storage/v1/object/public/apks/1794589224834-HUNTER.X.apk"><img src="https://i.ibb.co/TDHxYzfx/Screenshot-2026-11-14-09-52-24-663-hunter-x3.jpg" alt="HUNTER X Screenshot 2"></a>
+        <a class="slide" href="https://oqimtgbkifzbiqcwckki.supabase.co/storage/v1/object/public/apks/1794589224834-HUNTER.X.apk"><img src="https://i.ibb.co/3bgrjzf/Screenshot-2026-11-14-09-52-44-683-hunter-x3.jpg" alt="HUNTER X Screenshot 3"></a>
+        <a class="slide" href="https://oqimtgbkifzbiqcwckki.supabase.co/storage/v1/object/public/apks/1794589224834-HUNTER.X.apk"><img src="https://i.ibb.co/mr1zQWsY/Screenshot-2026-11-14-09-52-52-495-hunter-x3.jpg" alt="HUNTER X Screenshot 4"></a>
+      </div>
+      <button class="arrow prev" id="prev" aria-label="Previous screenshot">‹</button>
+      <button class="arrow next" id="next" aria-label="Next screenshot">›</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<section class="section wrap" id="stats">
+  <div class="heading"><div class="kicker">Community snapshot</div><h2>HUNTER X in <span class="gradient">Numbers</span></h2><p>App downloads and likes.</p></div>
+  <!-- Demo figures: update these with verified numbers before publishing. -->
+  <div class="stats">
+    <div class="stat"><div class="stat-icon">↓</div><div class="stat-number" data-counter="downloads">6,329</div><div class="stat-label">Downloads</div></div>
+    <div class="stat"><div class="stat-icon">♥</div><div class="stat-number" data-counter="likes">5,681</div><div class="stat-label">Likes</div></div>
+  </div>
+  <p class="demo">Animated demo counters — these are illustrative figures, not actual app analytics.</p>
+</section>
+
+<section class="section wrap" id="reviews">
+  <div class="heading"><div class="kicker">Player feedback</div><h2>Ratings & <span class="gradient">Reviews</span></h2><p>Add genuine reviews from your app users below.</p></div>
+  <!-- Sample review layout only. Replace with real user reviews and ratings. -->
+  <div class="rating"><div class="score">4.7<span style="font-size:17px">/5</span></div><div><div class="stars">★★★★★</div><div class="rating-note">Sample rating layout</div></div></div>
+  <div class="reviews">
+    <article class="review"><div class="person"><div class="avatar">01</div><div><b>suraj 11</b><small>Player feedback</small></div></div><div class="stars">★★★★★</div><h3>Amazing app hai, iska interface bahut smooth aur tournaments bhi zabardast hain!</h3><p> HUNTER X player .</p><span class="sample">best👍 app</span></article>
+    <article class="review"><div class="person"><div class="avatar">02</div><div><b>ROMIT pb</b><small>Player feedback</small></div></div><div class="stars">★★★★★</div><h3>App ka interface kaafi smooth hai aur support team bhi helpful lagi!</h3><p>HUNTER X player.</p><span class="sample">Good💯</span></article>
+    <article class="review"><div class="person"><div class="avatar">03</div><div><b>Vishal ff</b><small>Player feedback</small></div></div><div class="stars">★★★★★</div><h3>Tournament experience bahut badhiya hai!</h3><p> HUNTER X player.</p><span class="sample"> mast hai👊</span></article>
+    <article class="review"><div class="person"><div class="avatar">04</div><div><b> Amit bhai </b><small>Player feedback</small></div></div><div class="stars">★★★★★</div><h3>Overall experience kaafi achha raha!</h3><p> HUNTER X player.</p><span class="sample">Achha Hai  🙂 </span></article>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="heading"><div class="kicker">The HUNTER X experience</div><h2>Made for <span class="gradient">Players</span></h2></div>
+  <div class="features">
+    <div class="feature"><div class="ico">🎮</div><div><h3>Gaming Experience</h3><p>Explore the features available inside HUNTER X.</p></div></div>
+    <div class="feature"><div class="ico">✦</div><div><h3>Easy to Explore</h3><p>A clean interface to help you find your way around.</p></div></div>
+    <div class="feature"><div class="ico">📱</div><div><h3>Android App</h3><p>Get the app directly from the download link.</p></div></div>
+  </div>
+</section>
+
+<section class="cta wrap">
+  <h2>Ready to Start Hunting?</h2>
+  <p>Get HUNTER X on your Android device.</p>
+  <a class="download" href="https://oqimtgbkifzbiqcwckki.supabase.co/storage/v1/object/public/apks/1794589224834-HUNTER.X.apk">DOWNLOAD NOW</a>
+</section>
+</main>
+<footer class="wrap"><b>HUNTER X</b> · Official App Page<br>© <span id="year"></span> HUNTER X. All rights reserved 
+by ⓋᎪꜱʜɪꜱʜ.</footer>
+
+<script>
+const track=document.getElementById("track");
+const slides=[...track.children];
+const dotsBox=document.getElementById("dots");
+let index=0,timer;
+function showSlide(n){
+ index=(n+slides.length)%slides.length;
+ track.style.transform=`translateX(-${index*100}%)`;
+ [...dotsBox.children].forEach((d,i)=>{d.classList.toggle("active",i===index);d.setAttribute("aria-current",i===index?"true":"false")});
+}
+slides.forEach((_,i)=>{
+ const dot=document.createElement("button");
+ dot.className="dot"+(i===0?" active":"");dot.type="button";
+ dot.setAttribute("aria-label",`Show screenshot ${i+1}`);
+ dot.addEventListener("click",()=>{showSlide(i);restart()});
+ dotsBox.appendChild(dot);
+});
+document.getElementById("prev").addEventListener("click",()=>{showSlide(index-1);restart()});
+document.getElementById("next").addEventListener("click",()=>{showSlide(index+1);restart()});
+function start(){clearInterval(timer);timer=setInterval(()=>showSlide(index+1),4200)}
+function restart(){start()}
+const slider=document.querySelector(".slider");
+slider.addEventListener("mouseenter",()=>clearInterval(timer));
+slider.addEventListener("mouseleave",start);
+let startX=0;
+slider.addEventListener("touchstart",e=>{startX=e.changedTouches[0].screenX},{passive:true});
+slider.addEventListener("touchend",e=>{let dx=e.changedTouches[0].screenX-startX;if(Math.abs(dx)>45){showSlide(index+(dx<0?1:-1));restart()}},{passive:true});
+start();document.getElementById("year").textContent=new Date().getFullYear();
+
+// Clearly labelled demo counters: increment once every 2 seconds, then loop.
+const demoCounters = [
+  { element: document.querySelector('[data-counter="downloads"]'), value: 6329 },
+  { element: document.querySelector('[data-counter="likes"]'), value: 5681 }
+];
+demoCounters.forEach(counter => {
+  setInterval(() => {
+    counter.value = counter.value >= 10000 ? (counter.element.dataset.counter === "downloads" ? 6329 : 5681) : counter.value + 1;
+    counter.element.textContent = counter.value.toLocaleString("en-IN");
+  }, 2000);
+});
+</script>
+</body>
+</html>
